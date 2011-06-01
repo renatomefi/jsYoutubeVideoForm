@@ -24,14 +24,4 @@ Using
     videoTest.setIframePreview('iframe-preview').setContainerThumbs('element-thumbs-container');
 
 
-Getting the code
-----------------
-
-jsYoutubeVideoForm is a community project. The Ace source code is hosted on GitHub.
-
-    git clone git://github.com/nidorx/jsYoutubeVideoForm.git
-    cd jsYoutubeVideoForm
-    git submodule update --init --recursive
-
-
 
