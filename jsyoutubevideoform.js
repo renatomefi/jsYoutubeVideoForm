@@ -160,10 +160,12 @@ var youtubeVideoForm = window.youtubeVideoForm = function(inputUrl, inputTitle, 
      * 
      * @param {string} videoId Link que o usuário digitou no campo
      */
-    function getVideoInfo(videoId) {    
+    function getVideoInfo(videoId) {
+    
         var http_request = null;
         //activeX versions to check for in IE
-        var activexmodes=["Msxml2.XMLHTTP", "Microsoft.XMLHTTP"] 
+        var activexmodes=["Msxml2.XMLHTTP", "Microsoft.XMLHTTP"]
+        
         //Test for support for ActiveXObject in IE first (as XMLHttpRequest in IE7 is broken)
         if (window.ActiveXObject){
             for (var i=0; i<activexmodes.length; i++){
