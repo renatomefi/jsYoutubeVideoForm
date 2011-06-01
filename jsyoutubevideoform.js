@@ -6,9 +6,6 @@
  * @param {string} inputTitle Seletor do input usado como título
  * @param {string} inputDesc Seletor do input usado para descrição do video
  * @param {string} inputThumb Seletor do input usado para guardar a url da imagem selecionada
- * @param {string} containerThumbs Seletor do container usado para exibir as miniaturas
- * @param {string} iframeVideo Seletor do iframe usado para exibir o vídeo
- * @param {object} options Ainda não usado
  */
 var youtubeVideoForm = window.youtubeVideoForm = function(inputUrl, inputTitle, inputDesc, inputThumb){
                  
