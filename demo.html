@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jsyoutubevideoform.js"></script>
+        <title>js Youtube Video Form Demo</title>
+    </head>
+    <body>
+        <form id="form1" name="form1" enctype="multipart/form-data" method="post" action="">
+            <input type="hidden" name="input-thumb-url" id="input-thumb-url" />
+            <div>
+                <label>
+                    <span>Video :</span>
+                    <input type="text" name="input-url" id="input-url" size="60" />
+                </label>
+                <div>Ex: http://www.youtube.com/watch?v=wM89T74MPnE</div>
+            </div>
+
+            <div>
+                <label>
+                    <span>Title :</span>
+                    <input type="text" name="input-title" id="input-title" size="60" />
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <span>Desc :</span>
+                    <textarea  name="input-desc" id="input-desc" cols="60" rows="10"></textarea>
+                </label>
+            </div>
+
+            <div>
+                <span>Preview :</span>
+                <iframe id="iframe-preview" style="border: 1px solid black"></iframe>  
+            </div>
+
+            <div>
+                <span>Thumbs :</span>
+                <span id="element-thumbs-container"></span>
+            </div>
+
+        </form>
+        <script type="text/javascript">
+            // Create object
+            videoTest = new youtubeVideoForm('input-url','input-title','input-desc','input-thumb-url');
+            
+            // Set iframePreview and container of thumbs
+            videoTest.setIframePreview('iframe-preview').setContainerThumbs('element-thumbs-container');
+        </script>
+
+    </body>
+</html>
